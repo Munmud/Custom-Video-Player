@@ -41,10 +41,12 @@ function updateProgress() {
     }
     timestamp.innerHTML = `${mins}:${secs}` ;
 }
+
 // Set Video Time to progress
 function setVideoProgress() {
     video.currentTime = (+progress.value*video.duration)/100 ;
 }
+
 // Stop Video
 function stopVideo() {
     video.currentTime = 0 ;
